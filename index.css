@@ -1,0 +1,81 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: linear-gradient(135deg, #35b5e0, #00ff3b);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 75%;
+}
+
+header {
+	text-align: center;
+	flex: 1 1 100%;
+	font-size: 350%;
+	line-height: 70px;
+	order: 1;
+}
+
+main {
+	flex: 4 1;
+	order: 3;
+}
+
+aside {
+	flex: 1 1;
+	order: 4;		
+}
+
+footer {
+	text-align: right;
+	flex: 1 100%;
+	order: 5;
+}
+.first {
+	order: 2;
+}
+
+p {
+	font-size: 150%;
+}
+
+header, footer, aside, main {
+	margin: 20px;
+	padding: 20px;
+	background: white;
+}
+
+footer, header {
+	height: 70px;
+}
+
+@media all and (max-width: 900px) {
+	header {
+		order: 0;
+		flex: 1 100%;
+	}
+
+	main {
+		order: 1;
+		flex: 1 100%;
+	}
+
+	aside {
+		order: 2;
+		flex: 1;
+	}
+
+	footer {
+		order: 3;
+		flex: 1 100%;
+	}
+}
